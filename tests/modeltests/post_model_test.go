@@ -5,7 +5,7 @@ import (
 	"testing"
 
 	_ "github.com/jinzhu/gorm/dialects/mysql"
-	"github.com/victorsteven/fullstack/api/models"
+	"github.com/myomyintko/gin_gorm_mux/api/models"
 	"gopkg.in/go-playground/assert.v1"
 )
 

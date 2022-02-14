@@ -8,8 +8,8 @@ import (
 
 	"github.com/jinzhu/gorm"
 	"github.com/joho/godotenv"
-	"github.com/victorsteven/fullstack/api/controllers"
-	"github.com/victorsteven/fullstack/api/models"
+	"github.com/myomyintko/gin_gorm_mux/api/controllers"
+	"github.com/myomyintko/gin_gorm_mux/api/models"
 )
 
 var server = controllers.Server{}
@@ -110,14 +110,9 @@ func seedOneUser() (models.User, error) {
 func seedUsers() error {
 
 	users := []models.User{
-		models.User{
+		{
 			Nickname: "Steven victor",
 			Email:    "steven@gmail.com",
-			Password: "password",
-		},
-		models.User{
-			Nickname: "Kenny Morris",
-			Email:    "kenny@gmail.com",
 			Password: "password",
 		},
 	}
@@ -188,23 +183,18 @@ func seedUsersAndPosts() ([]models.User, []models.Post, error) {
 		return []models.User{}, []models.Post{}, err
 	}
 	var users = []models.User{
-		models.User{
+		{
 			Nickname: "Steven victor",
 			Email:    "steven@gmail.com",
 			Password: "password",
 		},
-		models.User{
-			Nickname: "Magu Frank",
-			Email:    "magu@gmail.com",
-			Password: "password",
-		},
 	}
 	var posts = []models.Post{
-		models.Post{
+		{
 			Title:   "Title 1",
 			Content: "Hello world 1",
 		},
-		models.Post{
+		{
 			Title:   "Title 2",
 			Content: "Hello world 2",
 		},

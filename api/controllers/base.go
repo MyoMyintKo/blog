@@ -8,10 +8,8 @@ import (
 	"github.com/gorilla/mux"
 	"github.com/jinzhu/gorm"
 
-	_ "github.com/jinzhu/gorm/dialects/mysql"    //mysql database driver
-	_ "github.com/jinzhu/gorm/dialects/postgres" //postgres database driver
-	_ "github.com/jinzhu/gorm/dialects/sqlite"   // sqlite database driver
-	"github.com/victorsteven/fullstack/api/models"
+	_ "github.com/jinzhu/gorm/dialects/mysql" //mysql database driver
+	"github.com/myomyintko/gin_gorm_mux/api/models"
 )
 
 type Server struct {
